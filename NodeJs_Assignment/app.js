@@ -28,7 +28,7 @@ app.get('/api/blog-stats', async (req, res) => {
       const uniqueBlogTitles = _.uniqBy(blogs, 'title');
       console.log(uniqueBlogTitles.length)
 
-      res.status(200).json({message:"okay",bloglength,longestBlog,privacyBlogs,uniqueBlogTitles});
+      res.status(200).json({message:"okay got it",bloglength,longestBlog,privacyBlogs,uniqueBlogTitles});
       
   
       // Data Analysis and Response will be implemented next.
